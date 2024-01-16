@@ -3,14 +3,19 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 60px;
-    background-color: blanchedalmond;
+    background-color:#0c3b39;
 } 
-#logo{
+/* #logo{ 
     width: 100px;
     height: 100px;
-}
+}*/
 #logo img{
-    width: 100%;
+    width:500px;
+    height:250px ;
+    margin-left: 95%; 
+     margin-right: 50%; 
+    display: block;
+
 }
 
 #name{
@@ -20,7 +25,9 @@
     font-size: 50px;
     font-weight: bold;
 }
-
+body{
+   background-color: #0c3b39;
+}
 .Heading{
     width: 100%;
     display: flex;
@@ -39,7 +46,7 @@
     margin: 10px auto ;
 }
 
-.sudoku_grid div{
+ .sudoku_grid div{ 
     display:  flex;
     align-items: center;
     justify-content: center;
@@ -52,65 +59,74 @@
     box-sizing: border-box;
 }
 
+
+
 .Buttons{   
     display: flex;
     justify-content: center;
     width: 100%;    
     margin-bottom: 80px;
+    margin-top: auto;
 }
 
-#GetPuzzle,#SolvePuzzle{
+#GetPuzzle, #SolvePuzzle {
     display: inline-block;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     background-color: #538fbe;
-    padding: 10px 35px;
-    font-size: 24px;
-    border: 1px solid #2d6898;
-    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
     margin-right: 10px;
+    cursor: pointer;
 }
 
-.box1{
-    background-color: #1520A6;
-    border: 2px solid  white;
+#GetPuzzle:hover, #SolvePuzzle:hover {
+    background-color: #4079a3; /* Adjusted hover color */
 }
 
-.box1:hover{
-    background-color: #48aaaD;
-    color: black;
+/* Updated box styling */
+.box1, .box2, .box3 {
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.box2{
-    background-color: #BC5448;
-    border: 2px solid  white;
-}
-.box2:hover{
-    background-color: red;
+.box1 {
+    background-color: #004080; /* Sampled color from the logo */
 }
 
-.box3{
-    background-color: #028a0f;
-    border: 2px solid  white;
-}
-.box3:hover{
-    background-color: #3Ded97;
-    color: black
+.box1:hover {
+    background-color: #0066cc; /* Sampled hover color from the logo */
+    color: #000;
 }
 
-.bl{
-    border-left: 4px solid black;
+.box2 {
+    background-color: #993333; /* Sampled color from the logo */
 }
 
-.bb{
-    border-bottom: 4px solid black;
+.box2:hover {
+    background-color: #cc0000; /* Sampled hover color from the logo */
 }
 
-.br{
-    border-right: 4px solid black;
+.box3 {
+    background-color: #006600; /* Sampled color from the logo */
 }
 
-.bt{
-    border-top: 4px solid black;
+.box3:hover {
+    background-color: #00cc00; /* Sampled hover color from the logo */
+    color: #000;
+}
+
+/* Updated border styling */
+/* .bl, .bb, .br, .bt { 
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}*/
+
+/* Updated hover effect for borders */
+.bl:hover, .bb:hover, .br:hover, .bt:hover {
+    border: 2px solid #000;
 }
